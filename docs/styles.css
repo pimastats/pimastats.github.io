@@ -1,0 +1,55 @@
+:root {
+  --night-deep: #11152e;
+  --aqua: #83c9c2;
+}
+
+.navbar {
+  background: var(--night-deep);
+  border-bottom: 1px solid rgba(223, 227, 255, .11);
+  box-shadow: none;
+  min-height: 74px;
+}
+
+.navbar-container { max-width: 1240px; }
+
+.navbar-brand {
+  align-items: center;
+  color: #f5f5ff !important;
+  display: inline-flex;
+  font-size: 1.25rem;
+  font-weight: 750;
+  letter-spacing: -.035em;
+  gap: .68rem;
+}
+
+.navbar-brand::before {
+  background: url("assets/saturn.svg") center / contain no-repeat;
+  content: "";
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+.navbar .nav-link {
+  color: #c9cce0 !important;
+  font-size: .9rem;
+  font-weight: 550;
+  letter-spacing: .015em;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active { color: #fff !important; }
+
+.navbar-toggler { border-color: rgba(223, 227, 255, .28); }
+.navbar-toggler-icon { filter: brightness(0) invert(1); opacity: .82; }
+#quarto-search svg { color: #d4d8ec !important; stroke: #d4d8ec; }
+
+.navbar .nav-link.active::after {
+  background: var(--aqua);
+  border-radius: 2px;
+  content: "";
+  display: block;
+  height: 2px;
+  margin: 2px auto 0;
+  width: 16px;
+}

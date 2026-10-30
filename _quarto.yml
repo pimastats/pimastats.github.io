@@ -1,0 +1,19 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - assets/saturn.svg
+
+website:
+  title: "pimastats"
+  navbar:
+    left:
+      - href: index.qmd
+        text: home
+      - href: about.qmd
+        text: about
+
+format:
+  html:
+    css: styles.css
+
